@@ -5,6 +5,7 @@ Feature: Search in Booking
     Then "Akra Kemer - Ultra All Inclusive" is shown
     And hotel has rating "9.1"
 
+
     Scenario Outline: Looking hotels
       Given booking search page is opened
       When user searches for "<hotel>"
