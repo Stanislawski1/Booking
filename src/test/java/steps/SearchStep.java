@@ -16,9 +16,6 @@ import org.testng.asserts.SoftAssert;
 import java.time.Duration;
 import java.util.List;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
-
 public class SearchStep {
 
     WebDriver driver;
@@ -82,8 +79,5 @@ public class SearchStep {
                     "Элемент с рейтингом должен быть видим");
             softAssert.assertAll();
     }
-
-
-
 }
 
