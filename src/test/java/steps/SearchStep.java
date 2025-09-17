@@ -79,5 +79,6 @@ public class SearchStep {
                     "Элемент с рейтингом должен быть видим");
             softAssert.assertAll();
     }
+
 }
 
