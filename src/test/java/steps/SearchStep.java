@@ -35,17 +35,15 @@ public class SearchStep {
     }
 
     @Given("booking search page is opened")
-    public void bookingSearchPageIsOpened() throws InterruptedException {
+    public void bookingSearchPageIsOpened() {
         driver.get(BASE_URL);
-        Thread.sleep(5000);
     }
 
     @When("user searches for {string}")
-    public void userSearchesFor(String hotel) throws InterruptedException {
+    public void userSearchesFor(String hotel) {
         driver.findElement(By.xpath(SEARCH_INPUT)).sendKeys(hotel);
         driver.findElement(By.xpath(String.format(HOTEL, hotel))).click();
         driver.findElement(By.xpath(SUBMIT_BUTTON)).click();
-        Thread.sleep(5000);
     }
 
     @Then("{string} is shown")
